@@ -1,0 +1,44 @@
+/* this section is for the dropdown menu */
+.list_of_pages{
+    display: none;
+}
+
+.dropdown_content a{
+    display: block;
+    color: #9f86c0;
+    padding: 0.3em 0.75em;
+    background-color: #231942;
+    text-decoration: none;
+}
+
+/* the following will make the dropdown menu content appear when we hover over it */
+.dropdown:hover + .dropdown_content ,.dropdown_content:hover{
+    display: flex ;
+}
+
+.dropdown_content a:hover {
+    background-color: #231942c4;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dropdown > #menucont{
+    margin-left: 0.5em;
+}
+/* this is the grid layout for the mobile version for the index page*/
+.mainpage_body{
+    display: grid;
+    grid-template-areas:
+    "header header" 
+    "nav nav"
+    "aside main "
+    "footer footer";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 16fr 1fr;
+}
+
+
