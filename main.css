@@ -1,47 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     background-color: black;
-    background-color:#e3e3e3de;
+    background-color: #e3e3e3de;
     overflow: auto;
     height: 100%;
 }
 
 
 /* header section for all the webpages */
-header{
-    font-size: 1.5em;  
+header {
+    font-size: 1.5em;
     color: hsl(349, 48%, 9%);
     text-align: center;
     grid-area: header;
     max-height: 2em;
 }
 
-nav{
+nav {
     background-color: #231942;
-    font-size: 2em;  
+    font-size: 2em;
     height: auto;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #9f86c0;
 }
 
-#menu_icon{
+#menu_icon {
     background-color: #231942;
     color: #9f86c0;
 }
 
-.dropdown_content{
+.dropdown_content {
     position: absolute;
     min-width: 150px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.438);
@@ -50,36 +50,36 @@ nav a{
 }
 
 /* this section is for labelling the section in the grid layout */
-.mainpage_aside{
+.mainpage_aside {
     grid-area: aside;
     display: flex;
 }
 
-.mainpage_aside{
+.mainpage_aside {
     flex-direction: column;
     height: 100%;
     justify-content: center;
 }
 
-nav{
+nav {
     grid-area: nav;
 }
 
-main{
+main {
     grid-area: main;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-footer{
+footer {
     grid-area: footer;
 }
 
 /* the following section is for the footer section */
-footer{
+footer {
     display: block;
-    background-color:#231942;
+    background-color: #231942;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -88,17 +88,70 @@ footer{
     font-size: 2em;
 }
 
-footer>a{
+footer>a {
     color: #9f86c0;
     text-decoration: none;
 }
 
 /* a bit more customisation on the index page before we move on */
-#profile_picture{
-    border-radius: 2000px;
-    border: #231942 4px solid;
+
+
+.index_main {
+    border-right: #231942 dotted 5px;
 }
 
-.index_main{
-    border-right: #231942 dotted 3px;
+.mainpage_aside{   
+    height: 100%;
+    width: 100%;
+}
+
+#profile_picture{
+    border-radius: 40px;
+}
+
+.profile_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+}
+ 
+.tilt_element{
+    width: 100%;
+    align-items: center;
+    transform-origin: bottom right;
+    transition: transform 2s ease;
+    width: 60%;
+}
+
+.profile_container:hover .tilt_element{
+    transform: rotate(10deg);
+}
+
+
+
+/* now onto the project page */
+
+/* labelling the various grid elements */
+
+.projects_element {
+    grid-area: projects_element;
+    border-bottom: #231942 dotted 2px;
+}
+
+.projects_image {
+    grid-area: projects_image;
+}
+
+.projects_content{
+    grid-area: projects_content;
+}
+
+.projects_aside {
+    grid-area: projects_aside;
+    border-right: #231942 dotted 5px;
+}
+.projects_main {
+    grid-area: projects_main;
 }

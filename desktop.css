@@ -15,10 +15,27 @@
 .mainpage_body{
     display: grid;
     grid-template-areas:
-    ". header header ." 
+    "header header header header" 
     "nav nav nav nav"
     ". aside main ."
     "footer footer footer footer";
     grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 16fr 0.5fr;
+}
+
+
+/* now onto the project page */
+/*  first we will look at the layout of this page */
+
+.projects_body{
+    display: grid;
+    grid-template-areas:
+    "header header" 
+    "nav nav "
+    "projects_aside projects_main"
+    "footer footer ";
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr 16fr 1fr;
 }
+
+

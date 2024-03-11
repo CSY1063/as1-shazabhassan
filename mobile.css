@@ -42,3 +42,15 @@
 }
 
 
+/* now onto the project page */
+/* we start by creating the grid layout */
+.projects_body{
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "nav nav nav"
+    "project"
+    "footer footer";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 16fr 1fr;
+}
