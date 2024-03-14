@@ -107,6 +107,8 @@ footer>a {
 
 #profile_picture{
     border-radius: 40px;
+    max-width: 18em;
+    height: auto;
 }
 
 .profile_container{
@@ -114,7 +116,6 @@ footer>a {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    overflow: hidden;
 }
  
 .tilt_element{

@@ -35,7 +35,7 @@ footer{
     "nav nav nav nav"
     ". aside main ."
     "footer footer footer footer";
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 0.3fr 3fr 2fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 16fr 0.5fr;
 }
 
@@ -102,8 +102,7 @@ footer{
 
 @media (max-width:2200px) {
     .projects_body{
-        background-color: aqua;
-        grid-template-areas:
+    grid-template-areas:
     "header " 
     "nav "
     "projects_main"
@@ -120,7 +119,7 @@ footer{
     .projects_content{
         margin-top: 5em;
         font-size: 1.9em;
-        font-family:  'Arial Narrow Bold'   ;
+        font-family:  'Arial Narrow Bold';
         
     }
 

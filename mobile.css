@@ -35,13 +35,16 @@
     grid-template-areas:
     "header header" 
     "nav nav"
-    "aside main "
+    "aside aside"
+    "main main"
     "footer footer";
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 16fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 8fr 1fr;
 }
 
-
+.index_main p{
+    padding-left: 1em;
+}
 /* now onto the project page */
 /* we start by creating the grid layout */
 .projects_body{
