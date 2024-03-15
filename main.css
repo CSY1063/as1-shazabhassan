@@ -211,3 +211,21 @@ footer>a {
 .contact_main{
     grid-area: contact_main;
 }
+
+.contact_main{
+    border: #231942 15px double;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_container div{
+    padding-top: 1em;
+}
+
+#last_form_section input{
+    padding: 1em;
+    border-radius: 50px;
+    margin-left: 1em;
+}
