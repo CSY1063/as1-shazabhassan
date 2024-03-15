@@ -205,3 +205,30 @@ footer{
         }
 }
 
+/* this is the grid layout for the contact page */
+
+.contact_body{
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "nav nav nav"
+    ". . ."
+    "contact_aside contact_main ."
+    ". . ."
+    "footer footer footer ";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 7fr 3fr 1fr;
+}
+
+
+.contact_main{
+    background-color: #231942;
+    color: #9f86c0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_main h2{
+
+}

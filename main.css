@@ -169,11 +169,6 @@ footer>a {
 }
 
 
-
-
-
-
-
 /* now onto the project page */
 
 /* labelling the various grid elements */
@@ -202,4 +197,17 @@ footer>a {
 
 .italic{
     font-style: italic;
+}
+
+
+.contact_body{
+    grid-area: contact_body;
+}
+
+.contact_aside{
+    grid-area: contact_aside;
+}
+
+.contact_main{
+    grid-area: contact_main;
 }
