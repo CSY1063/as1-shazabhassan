@@ -91,6 +91,7 @@ footer {
 footer>a {
     color: #9f86c0;
     text-decoration: none;
+    margin-right: 0.45em;
 }
 
 /* a bit more customisation on the index page before we move on */
@@ -107,7 +108,8 @@ footer>a {
 
 #profile_picture{
     border-radius: 40px;
-    max-width: 18em;
+    max-width: 75%;
+    min-width: 18em;
     height: auto;
 }
 
