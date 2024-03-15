@@ -131,6 +131,51 @@ footer>a {
 }
 
 
+.index_main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.index_main p{
+    line-height: 1.6; /* This is to increase the readability of the content */
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    border-left: #9f86c0 10px solid;
+}
+
+.index_main{
+    height: 100vh;
+}
+
+.bigtext, .welcome {
+    display: block; 
+    margin-bottom: 1em; 
+}
+
+.bigtext{
+    font-size: large;
+}
+.welcome{
+    margin-top: 0.4em;
+    font-weight: 900;
+}
+
+.index_main a{
+    text-decoration: none;
+    color: #231942;
+}
+
+.index_main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
 
 /* now onto the project page */
 
