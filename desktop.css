@@ -39,6 +39,23 @@ footer{
     grid-template-rows: 0.5fr 0.5fr 16fr 0.5fr;
 }
 
+.index_main {
+    border-right: #231942 dotted 5px;
+}
+
+.index_main {
+    padding-right: 3em;
+}
+
+.index_main{
+    height: 100vh;
+}
+.index_main p{
+    border-left: #9f86c0 10px solid;
+}
+
+
+
 
 /* now onto the project page */
 /*  first we will look at the layout of this page */

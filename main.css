@@ -97,9 +97,7 @@ footer>a {
 /* a bit more customisation on the index page before we move on */
 
 
-.index_main {
-    border-right: #231942 dotted 5px;
-}
+
 
 .mainpage_aside{   
     height: 100%;
@@ -142,12 +140,9 @@ footer>a {
 .index_main p{
     line-height: 1.6; /* This is to increase the readability of the content */
     font-family:Tahoma, Geneva, Verdana, sans-serif;
-    border-left: #9f86c0 10px solid;
 }
 
-.index_main{
-    height: 100vh;
-}
+
 
 .bigtext, .welcome {
     display: block; 

@@ -38,13 +38,31 @@
     "aside aside"
     "main main"
     "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 8fr 8fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 4fr 3fr 0.4fr;
 }
 
-.index_main p{
-    padding-left: 1em;
+.index_main{
+    padding-left: 2em;
+    padding-right: 2em;
 }
+
+.index_footer{
+    padding-top: 0.4em;
+}
+
+.bigtext{
+    display: table;
+    width: 100%;
+    padding-top: 1em;
+    border-top: #9f86c0 10px solid;
+}
+
+
+
+
+
+
 /* now onto the project page */
 /* we start by creating the grid layout */
 .projects_body{
@@ -100,3 +118,4 @@
     padding-bottom: 2em;
     
 }
+
