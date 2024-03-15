@@ -54,10 +54,8 @@ footer{
     grid-template-rows: 1fr 1fr 16fr 1fr;
 }
 
-
-
 .projects_image img {
-    width: 100%; 
+    width: 100%;
     height: auto; 
 }
 
@@ -93,14 +91,16 @@ footer{
 
 
 .projects_content{
-    position: absolute;
+    max-width: 40%;
     right: 0;
     padding-right: 4em;
+    border-left: #9f86c0 10px solid;
+    padding-left: 2em;
 }
 }
 
 
-@media (max-width:2200px) {
+@media (min-width:1000px) and (max-width:2200px) {
     .projects_body{
     grid-template-areas:
     "header " 
@@ -111,20 +111,80 @@ footer{
     grid-template-rows: 1fr 1fr 16fr 1fr;
     }
 
+    .projects_image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .projects_image img{
-        height: auto;
-        max-width: 100%;
-        
+        width: 100%;
     }
     .projects_content{
         margin-top: 5em;
         font-size: 1.9em;
         font-family:  'Arial Narrow Bold';
-        
+        padding-left: 2em;     
+    }
+    .projects_content .border{
+        padding-top: 0.3em;
+        border-top: #9f86c0 10px solid;
     }
 
     .projects_element:nth-child(3) .projects_content{
-        margin-top: 10em;
+        margin-top: 5em;
+        margin-bottom: 3em;
     }
     
+    .projects_element:nth-child(1) .projects_content,.projects_element:nth-child(2) .projects_content{
+        padding-bottom: 2em;
+        
+    }
 }
+
+
+@media (max-width:1000px) {  
+    .projects_body{
+        grid-template-areas:
+        "header " 
+        "nav "
+        "projects_main"
+        " footer ";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 16fr 1fr;
+        }
+    
+        .projects_image{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .projects_image img{
+            width: 100%;
+        }
+        .projects_content{
+            margin-top: 5em;
+            font-size: 1.9em;
+            font-family:  'Arial Narrow Bold';
+            padding-left: 2em;     
+        }
+    
+        .projects_element:nth-child(3) .projects_content{
+            margin-top: 5em;
+            margin-bottom: 3em;
+        }
+        
+        .projects_element:nth-child(1) .projects_content,.projects_element:nth-child(2) .projects_content{
+            padding-bottom: 2em;
+            
+        }
+        .projects_content{
+        padding-top: 0.3em;
+        border-top: #9f86c0 10px solid;
+        }
+        .projects_content{
+            padding-right: 2em;
+        }
+}
+

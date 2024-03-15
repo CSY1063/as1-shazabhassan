@@ -57,3 +57,46 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr 16fr 1fr;
 }
+
+
+/* this is the code for the responsive part for projects page */
+.projects_body{
+    grid-template-areas:
+    "header " 
+    "nav "
+    "projects_main"
+    " footer ";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 16fr 1fr;
+}
+
+.projects_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects_image img{
+    width: 100%;
+}
+.projects_content{
+    margin-top: 5em;
+    font-size: 1.9em;
+    font-family:  'Arial Narrow Bold';
+    padding-left: 2em;  
+    padding-right: 2em ;   
+}
+.projects_content h2{
+    padding-top: 0.3em;
+    border-top: #9f86c0 10px solid;
+}
+
+.projects_element:nth-child(3) .projects_content{
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.projects_element:nth-child(1) .projects_content,.projects_element:nth-child(2) .projects_content{
+    padding-bottom: 2em;
+    
+}

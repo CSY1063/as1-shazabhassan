@@ -194,6 +194,7 @@ footer>a {
 
 .projects_content{
     grid-area: projects_content;
+    font-family:  'Arial Narrow Bold'; 
 }
 
 .projects_aside {
@@ -202,4 +203,8 @@ footer>a {
 }
 .projects_main {
     grid-area: projects_main;
+}
+
+.italic{
+    font-style: italic;
 }
