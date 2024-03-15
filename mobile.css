@@ -119,3 +119,21 @@
     
 }
 
+/* addding the grid layout for this new contacts section */
+
+.contact_body{
+    display: grid;
+    font-family:  'Arial Narrow Bold';
+
+    grid-template-areas:
+    "header" 
+    "nav"
+    "contact_main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 17fr 0.5fr;
+}
+
+.contact_body footer{
+    padding-top: 0.2em;
+}
