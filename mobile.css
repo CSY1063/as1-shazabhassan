@@ -137,3 +137,51 @@
 .contact_body footer{
     padding-top: 0.2em;
 }
+
+
+/* this is the grid layout for the report page */
+.report_body{
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "nav nav nav"
+    " report_main report_main report_main"
+    "footer footer footer ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 29fr 1fr;
+}
+
+
+.report_main{
+    display: grid;
+    grid-template-areas:
+        "first_title"
+        "Mainpage_title"
+        "image_grid1"
+        "Projectspage_title"
+        "image_grid2"
+        "Contactspage_title"
+        "image_grid3"
+        "Validation_title"
+        "image_grid4"
+        "image_grid5"
+        "image_grid6"
+        "last_title"
+        "written_report";
+    grid-template-columns: 1fr;
+}
+
+.image_grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image_grid img{
+    width: 70%;
+    height: auto;
+}
+body > main > div.first_title > h2 > span{
+    border: none;
+}

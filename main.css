@@ -137,7 +137,7 @@ footer>a {
 }
 
 
-.index_main p {
+.index_main div {
     line-height: 1.6;
     /* This is to increase the readability of the content */
     font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -162,8 +162,14 @@ footer>a {
 
 .index_main a {
     text-decoration: none;
-    color: #231942;
+    color:#231942;
+    transition: color 250ms ease-in-out;
 }
+.index_main a:hover{
+    color: #9f86c0;
+    text-decoration: underline;
+}
+
 
 .index_main {
     justify-content: center;
@@ -222,6 +228,7 @@ footer>a {
     display: flex;
     justify-content: center;
     text-align: center;
+    height: calc(100% - 30px);
 }
 
 .contact_container div {
@@ -257,6 +264,10 @@ body > main > div:nth-child(4){
 
 body > main > div:nth-child(6){
     grid-area: Contactspage_title;
+}
+
+body > main > div:nth-child(8){
+    grid-area: Validation_title;
 }
 
 
@@ -296,6 +307,8 @@ body > main > div:nth-child(6){
     grid-area: image9;
 }
 
+
+
 .last_title{
     grid-area: last_title;
 }
@@ -304,16 +317,84 @@ body > main > div:nth-child(6){
     grid-area: written_report;
 }
 
-.image_grid:nth-of-type(1){
+body > main > div:nth-child(3){
     grid-area: image_grid1;
 }
 
-.image_grid:nth-of-type(2){
+body > main > div:nth-child(5){
     grid-area: image_grid2;
 }
 
-.image_grid:nth-of-type(3){
+body > main > div:nth-child(7){
     grid-area: image_grid3;
 }
 
+body > main > div:nth-child(9){
+    grid-area: image_grid4;
+}
+body > main > div:nth-child(10){
+    grid-area: image_grid5;
 
+}
+body > main > div:nth-child(11){
+    grid-area: image_grid6;
+}
+
+
+.written_report_content{
+    grid-area:written_report_content;
+}
+
+
+
+
+body > main > div:nth-child(11){
+    border-bottom: #231942 10px dotted;
+}
+
+
+.title_page{
+    text-align: center;
+    font-size: 2em;
+    border-top: #231942 10px double;
+    border-bottom: #231942 10px double;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.3em;
+}
+
+
+.first_title , .last_title{
+    text-align: center;
+}
+
+.first_title span , .last_title span{
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+
+.first_title span{
+    border: #231942 10px solid;
+
+}
+
+
+.written_report_content{
+    border: #231942 3px ;
+    border-style:dashed;
+    border-radius: 30px;
+    padding: 2em;
+}
+/* this is for the video page */
+
+.video_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video_main > iframe{
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
